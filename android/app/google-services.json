@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "341019569235",
+    "project_id": "contadordespertar",
+    "storage_bucket": "contadordespertar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:341019569235:android:3d1379a29454948156aaa6",
+        "android_client_info": {
+          "package_name": "com.example.contador_despertar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCR8fPzcap_O4mxchV9vctq64KZear0kFQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
