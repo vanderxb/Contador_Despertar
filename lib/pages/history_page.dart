@@ -108,9 +108,9 @@ Esta ação não poderá ser desfeita
                 color: Colors.grey[300],
                 padding:
                     const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
-                child: Row(
+                child: const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const [
+                  children: [
                     Text(
                       'CONTADOR',
                       style: TextStyle(fontWeight: FontWeight.bold),
@@ -151,15 +151,44 @@ Esta ação não poderá ser desfeita
                                   dateFormat.format(creationDate.toDate());
 
                               return ListTile(
-                                leading: Text(counterTitle),
                                 title: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
                                   children: [
-                                    Text(counterQuantity.toString()),
+                                    Expanded(
+                                      child: Container(
+                                        alignment: Alignment.centerLeft,
+                                        child: Text(
+                                          counterTitle,
+                                          style: const TextStyle(
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                      ),
+                                    ),
+                                    const VerticalDivider(), // Optional divider for better separation
+                                    Expanded(
+                                      child: Container(
+                                        alignment: Alignment.center,
+                                        child: Text(
+                                          counterQuantity.toString(),
+                                          style: const TextStyle(
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                      ),
+                                    ),
+                                    const VerticalDivider(), // Optional divider for better separation
+                                    Expanded(
+                                      child: Container(
+                                        alignment: Alignment.centerRight,
+                                        child: Text(
+                                          printDate,
+                                          style: const TextStyle(
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                      ),
+                                    ),
                                   ],
                                 ),
-                                trailing: Text(printDate),
                               );
                             }),
                       );

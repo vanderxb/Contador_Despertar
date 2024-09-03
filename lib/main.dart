@@ -1,7 +1,7 @@
-import 'package:contador_despertar/firebase_options.dart';
-import 'package:contador_despertar/pages/history_page.dart';
-import 'package:contador_despertar/pages/splash_screen.dart';
-import 'package:contador_despertar/services/google_sheet_api.dart';
+import 'firebase_options.dart';
+import 'pages/history_page.dart';
+import 'pages/splash_screen.dart';
+import 'services/google_sheet_api.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'pages/home_page.dart';
